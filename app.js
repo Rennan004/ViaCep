@@ -1,4 +1,5 @@
-$('.submit-btn').on('click', function() {
+$('#CEP').focusout(function(e) {
+    e.preventDefault()
     var numCep = $('#CEP').val()
     var url = "https://viacep.com.br/ws/" + numCep + "/json/"
 
